@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+    
+}
+
+table{
+    border: 1px solid cadetblue;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+

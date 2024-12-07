@@ -1,0 +1,120 @@
+
+@keyframes entrada{
+    from{
+        margin-left: 100%;
+        opacity: 0%;
+    }to{
+        margin-left: 0%;
+        opacity: 100%;
+    }
+}   
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    table {
+        font-size: 0.8em;
+    }
+}
+
+
+
+body{
+    background-color: black;
+    
+    width: auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 100px;
+    border-bottom:2px groove cadetblue;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    
+    
+}
+.grid_grande{
+    grid-column: span 3;
+    grid-row: span 1;
+}
+#index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:cadetblue;
+    width: 100%;
+    
+}
+#titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:cadetblue;
+    width: 100%;
+}
+#grid_temas{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr ;
+    animation-name: entrada;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    width: auto;
+    
+}
+.line{
+    border-bottom: cadetblue;
+    width: 100%;
+    border-bottom: 2px;
+}
+.margin_bottom200px{
+    margin-bottom: 2000px;
+}
+.space200px{
+    padding-left: 150px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color:cadetblue;
+}
+
+button {
+    width: 200px;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge #149CEA;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+    margin-bottom: 20px;
+   
+  }
+  
+
+button:hover{
+
+    background-color: rgb(11, 46, 117);
+    transform: scale(1.1);
+    
+}
+
+
+
+
+
+
+
+

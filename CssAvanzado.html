@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temario Completo - CSS Avanzado</title>
+    <link rel="stylesheet" href="CSS/styleCssAvanzado.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Avanzado</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#flexbox-grid">Layouts Avanzados</a></li>
+                <li><a href="#tipografia">Fuentes y Tipografía</a></li>
+                <li><a href="#selectores">Selectores Avanzados</a></li>
+                <li><a href="#variables-css">Variables CSS</a></li>
+                <li><a href="#animaciones">Animaciones y Transiciones</a></li>
+                <li><a href="#popover-api">Popover API</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduccion">
+            <h2>1. Introducción</h2>
+            <p>
+                CSS avanzado se centra en crear páginas adaptativas y eficientes, asegurando diseño y funcionalidad óptimos en proyectos complejos.
+            </p>
+            <p class="strong">
+                Importancia del diseño adaptable y optimizado
+            </p>
+            <p>Uno de los pilares del CSS avanzado es el diseño responsive, que
+                permite que las páginas web se adapten a diferentes tamaños de
+                pantalla y dispositivos.</p>
+        </section>
+
+        <section id="flexbox-grid">
+            <h2>2. Layouts Avanzados con Flexbox y Grid</h2>
+            <p>
+                Flexbox y Grid son herramientas esenciales para crear diseños flexibles y estructurados en la web.
+            </p>
+            <ul>
+                <li><p class="strong">Alineación y distribución precisa</p>
+                    <p>flex-shrink: Controla cómo se reduce el tamaño de un elemento cuando no hay
+                        tiene suficiente espacio disponible. Valores más grandes permiten que el elemento se
+                        reduzca más.</p>
+                        <p>align-self: Permite que un solo elemento en un contenedor flex tenga
+                            una alineación distinta al resto de elementos. Los valores pueden ser
+                            flex-start, flex-end, center, baseline o stretch.</p>
+                </li>
+                <li>
+                    <p class="strong">Creación de estructuras complejas</p>
+                    <p>
+                        CSS Grid Layout es una herramienta más potente que Flexbox cuando se trata de crear layouts en dos
+                        dimensiones (hilera y columna). Grid permite colocar elementos en una cuadrícula con mucha precisión,
+                        controlando el tamaño de las filas y columnas, y permitiendo que los elementos se ajusten al espacio disponible.
+                    </p>
+                    <p>Propiedades clave en CSS Grid:</p>
+                    <ul>
+                        <li><p class="strong">grid-template-columns y grid-template-rows:</p>
+                            Definen el número y el tamaño de las columnas y filas dentro
+                            del contenedor grid.</li>
+                            <li><p class="strong">grid-column y grid-row:</p>
+                                Permeten que un
+                                element ocupi diverses columnes o files dins de
+                                la quadrícula.
+                            </li>
+                            <li>
+                                <p class="strong">gap:</p>
+                                Define el espacio entre las filas y columnas de
+                                la cuadrícula.
+                            </li>
+                    </ul>
+                </li>
+                <li><p class="strong">Adaptabilidad a cualquier dispositivo</p>
+
+                </li>
+            </ul>
+            <img src="https://dogramcode.com/img/storage/grid-css.webp" alt="grid-image" class="image_size40">
+        </section>
+
+        <section id="tipografia">
+            <h2>3. Fuentes y Tipografía Avanzadas</h2>
+            <p>
+                Control detallado de las fuentes para mejorar la estética y la experiencia de usuario.
+            </p>
+            <ul>
+                <li><p class="strong">Carga dinámica con @font-face</p>
+                    <p>La regla @font-face permite utilizar fuentes
+                        personalizadas que no están disponibles en el sistema
+                        del usuario. Esto significa que puedes cargar fuentes
+                        específicas desde tu servidor o desde una fuente
+                        externa como Google Fonts, garantizando una coherencia
+                        tipográfica entre todos los usuarios, independientemente
+                        del dispositivo o navegador que utilicen.</p>
+                </li>
+
+                <li><p class="strong">Control avançat de tipografia</p>
+                    <ul>
+                        <li>Propiedad letter-spacing: <br>La propiedad letter-spacing permite ajustar el espacio entre
+                            las letras de un texto, haciendo que el texto se vea más
+                            comprimido o espaciado.</li>
+                        <li>
+                            Propietat line-height: <br>
+                            La propietat line-height controla l'alçada de les línies de
+                            text. Una alçada de línia més gran augmenta l'espai entre
+                            les línies, cosa que pot millorar la llegibilitat.
+                        </li>
+                        <li>
+                            Propiedad fuente-weight: <br>
+                            La propiedad fuente-weight controla el grosor del texto. Además
+                            de los valores normal y bold, se pueden utilizar valores
+                            numéricos entre 100 (muy delgado) y 900 (muy grueso),
+                            ofreciendo mayor flexibilidad.
+                        </li>
+                        <li>
+                            Propiedad font-style: <br>
+                            La propiedad font-style permite definir si el texto se
+                            mostrará en estilo normal, cursiva u oblicua. Es útil para
+                            dar énfasis al texto.
+                        </li>
+                        <li>
+                            Propiedad texto-transform: <br>
+                                Esta propiedad permite cambiar la capitalización del
+                                texto, convirtiéndolo todo en mayúsculas, minúsculas o
+                                capitalizando la primera letra de cada palabra.
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </section>
+
+        <section id="selectores">
+            <h2>4. Selectores Avanzados</h2>
+            <p>
+                Los selectores avanzados en CSS permiten aplicar estilos con mucha mayor precisión y flexibilidad, permitiendo seleccionar
+                elementos específicos en función de su posición, relación con otros elementos o atributos.
+            </p>
+            <ul>
+                <li><p class="strong">Combinadores de descendientes y hermanos</p>
+                <p>Els selectors combinats permeten seleccionar elements que tenen una relació específica amb altres elements dins del document. Els combinadors més
+                    comuns són:</p>
+                    <ul>
+                        <li>Combinador de descendientes ( ) <br>
+                             Selecciona todos los elementos que son descendientes (hijos, nietos, etc.) de un elemento padre.</li>
+                        <li>Combinador de hijos directos (>) <br>
+                            Selecciona sólo a los hijos directos de un elemento padre.</li>
+                        <li>Combinador de hermanos adyacentes (+) <br>
+                            Selecciona el elemento que está justo después de otro elemento hermano.</li>
+                        <li>Combinador de hermanos generales (~) <br>
+                            Selecciona todos los hermanos que siguen un elemento determinado dentro del mismo padre.</li>
+                    </ul>
+                </li>
+                <li><p class="strong">Selectores de atributo</p>
+                    <ul>
+                        <li>:hover: <br>
+                            Aplica estilos cuando el usuario pasa el ratón por encima del elemento.</li>
+                        <li>
+                            :nth-child(): <br>
+                            Selecciona elements en funció de la seva posició entre els seus germans.
+                        </li>
+                        <li>
+                            :first-of-type: <br>
+                            Selecciona el primer elemento de su tipo dentro de su padre.
+                        </li>
+                        <li>
+                            :not(): <br>
+                            Selecciona tots els elements excepte aquells que coincideixin amb el selector
+                            especificat.
+                        </li>
+                    </ul>
+                </li>
+                <li><p class="strong">Pseudo-elementos y pseudo-clases</p></li>
+                <ul>
+                    <li>
+                        ::before: <br>
+                        Añade contenido o estilos antes del contenido real de un elemento.
+                    </li>
+                    <li>
+                        ::after: <br>
+                        Añade contenido o estilos después del contenido real de un elemento.
+                    </li>
+                </ul>
+            </ul>
+        </section>
+
+        <section id="variables-css">
+            <h2>5. Variables CSS (Custom Properties)</h2>
+            <p>
+                Las variables CSS, también conocidas como Custom Properties, permiten definir valores reutilizables dentro de un
+                documento CSS. Esta característica facilita mucho la gestión y mantenimiento de grandes hojas de estilo, ya que puedes
+                centralizar valores como colores, tamaños y espaciados, y reutilizarlos en diversas reglas CSS.
+            </p>
+            <ol>
+                <li><p class="strong">Definir i utilitzar variables CSS</p>
+                    Las variables CSS se definen dentro de cualquier selector utilizando el prefijo --. Es habitual
+                    definirlas en el selector :root para que estén disponibles globalmente en todo el documento.
+                </li>
+                <li>
+                    <p class="strong">Beneficis de les variables en grans projectes</p>
+                    El uso de variables es especialmente útil en proyectos grandes o complejos, donde necesitas garantizar la consistencia en
+                    colores, tamaños, fuentes y otros estilos Cambiar estos valores en múltiples lugares manualmente puede ser tedioso y propenso a
+                    errores. Las variables centralizan estos valores en un solo sitio.
+                </li>
+                <li>
+                    <p class="strong">Variables CSS amb valors per defecte</p>
+                    Puedes proporcionar un valor predeterminado a las variables CSS en caso de que no estén definidas. Esto es útil si quieres
+                    asegurarte de que el diseño funcione incluso si la variable falla o no se encuentra.
+                </li>
+
+            </ol>
+            <img src="data:image/png;base64,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" alt="varCSS" class="image_size40">
+        </section>
+
+        <section id="animaciones">
+            <h2>6. Animaciones y Transiciones</h2>
+            <p>
+                Las animaciones y transiciones en CSS son herramientas potentes que permiten añadir movimiento e interacción visual a
+                las páginas web, mejorando la experiencia del usuario. Con estas técnicas, puedes controlar cómo los
+                elementos cambian sus propiedades (como color, posición u opacidad) de forma suave y fluida.
+            </p>
+            <ul>
+                <li><p class="strong">Sintaxis básica de transición:</p>
+                    <ol>
+                        <li>Propiedad: <br> La propiedad CSS que quieres animar (ej. background-color, transform,
+                            opacity, etc.).</li>
+                        <li>
+                            Duración: <br>
+                            ¿Cuánto tiempo durará la transición (ej. 0.5s, 2s).
+                        </li>
+                        <li>
+                            Función de temporización: <br>Controla cómo será la velocidad de la transición (ej. ease,
+                            linear, ease-in-out).
+                        </li>
+                        <li>
+                            Retraso: <br>
+                            Opcional, define cuánto tiempo tardará en empezar la transición (ej. 1s).
+                        </li>
+                    </ol>
+                </li>
+                <li><p class="strong">Propiedades de transición (transition-property)</p>
+                    Si quieres animar varias propiedades simultáneamente, puedes especificarlas individualmente con transition-property o
+                    utilizar ajo para aplicar la transición a todas las propiedades que cambien.
+                </li>
+                <li><p class="strong">Animaciones clave con @keyframes</p>
+                    Las animaciones en CSS permiten crear movimientos más complejos que las transiciones. Utilizan la regla @keyframes
+                    para definir puntos intermedios del movimiento o cambio de propiedad, y se aplican a través de la propiedad animation.
+                    <ul>
+                        <li>Nombre de la animación: El nombre de la animación definida con @keyframes.</li>
+                        <li>Duración: El tiempo que durará la animación.</li>
+                        <li>Función de temporización: Controla la velocidad de la animación (linear, ease, etc.).</li>
+                        <li>Retraso: Opcional, cuánto tiempo tardará en empezar la animación.</li>
+                        <li>Ciclos: ¿Cuántas veces se repetirá la animación (infinito para repetirla indefinidamente).</li>
+                        <li>Dirección: Opcional, si la animación se juega de forma normal o inversa (normal, reverse,
+                            alternate).</li>
+                    </ul>
+                </li>
+            </ul>
+            <img src="data:image/jpeg;base64,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" alt="animacion_imagen" class="image_size40">
+        </section>
+
+        <section id="popover-api">
+            <h2>7. Popover API</h2>
+            <p>
+                La Popover API es una funcionalidad reciente que permite a los desarrolladores crear contenido emergente (popovers)
+                de forma nativa, utilizando sólo HTML y CSS, sin necesidad de JavaScript. Esta API facilita la creación de
+                componentes como menús, sugerencias o notificaciones que aparecen sobre el contenido existente.
+            </p>
+            <p class="strong">Atributos HTML relevantes</p>
+            <p>popover: Atributo global que designa un elemento como popover.</p>
+            <ol>
+                <li>"auto" (por defecto): El popover se muestra y se oculta automáticamente.</li>
+                <li>"manual": El control de la visibilidad del popover se gestiona manualmente.</li>
+            </ol>
+            <p>popovertarget: Atributo que especifica el ID del elemento popover que se controlará.</p>
+            <p>popovertargetaction: Define la acción a realizar sobre el popover.</p>
+            <ol>
+                <li>"show": Muestra el popover.</li>
+                <li>"hide": Oculta el popover.</li>
+                <li>"toggle": Alterna entre mostrar i ocultar el popover.</li>
+            </ol>
+            <img src="data:image/png;base64,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" alt="popoverImage" class="image_size40">
+
+        </section>
+    </main>
+
+    <footer>
+        <a href="index.html">Volver al inicio</a>
+    </footer>
+</body>
+</html>
